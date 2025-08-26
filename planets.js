@@ -8,3 +8,14 @@ const planets = [
 	{name: "Uranus", temperature: 78, distance: 19.22},
 	{name: "Neptune", temperature: 73, distance: 30.05}
 ];
+
+
+//Temperature is betweem 253 K nad 323 K
+planets.filter(function() {
+	for()//Here we put in the range of the temperture
+	//then state what to return if true 
+});
+
+
+
+//This distance from the sun is between 0.75 and 1.5AU
