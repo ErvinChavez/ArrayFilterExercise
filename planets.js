@@ -11,7 +11,10 @@ const planets = [
 
 //Temperature is betweem 253 K nad 323 K
 const planetTemp = Array.from(planets).filter(function (value) {
+  //Need to figure out how to return name of planet of the right tempertures
   if (value.temperature >= 253 || value.temperature <= 323) {
+    //Need to probably make it into Array list first
+
     return value.name;
   }
 });
