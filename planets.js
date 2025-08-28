@@ -9,13 +9,32 @@ const planets = [
   { name: "Neptune", temperature: 73, distance: 30.05 },
 ];
 
-//Temperature is betweem 253 K nad 323 K
-const planetTemp = Array.from(planets).filter(function (value) {
-  //Need to figure out how to return name of planet of the right tempertures
-  if (value.temperature >= 253 || value.temperature <= 323) {
-    //Need to probably make it into Array list first
+//My Attempt................
 
-    return value.name;
+//Temperature is betweem 253 K nad 323 K
+const planetTemp = planets.filter(function (value) {
+  if (value.temperature >= 253 && value.temperature <= 323) {
+    console.log(value.name);
   }
 });
 //This distance from the sun is between 0.75 and 1.5AU
+const distanceFromSun = planets.filter(function (value) {
+  if (value.distance >= 0.75 && value.distance <= 1.5) {
+    console.log(value.name);
+  }
+});
+
+//SpringBoard Solution............
+
+const habitablePlanets = planets.filter(function (planet) {
+  return (
+    planet.temperature >= 253 &&
+    planet.temperature <= 323 &&
+    planet.distance >= 0.75 &&
+    planet.distance <= 1.5
+  );
+});
+
+console.log(habitablePlanets);
+
+//Notes: I could have just combined both of them into one variable instead of making two separate ones.
