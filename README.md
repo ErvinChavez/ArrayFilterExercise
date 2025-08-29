@@ -1,2 +1,2 @@
 # ArrayFilterExercise
-Small Filter Exercise
+Went over and tried on our own the filter exercise.
